@@ -12,7 +12,6 @@ class Stock < ActiveRecord::Base
     
     new_stock = new(ticker: looked_up_stock.symbol, name: looked_up_stock.name)
     new_stock.last_price = new_stock.price
-    
     new_stock
     
   end
